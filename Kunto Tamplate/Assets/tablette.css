@@ -1,0 +1,158 @@
+/* Version tablette avec media queries */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: "Baskervville", serif;
+    font-family: "Manrope", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .logo{
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 8rem; */
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .banniere {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 12rem;
+    margin: 2rem;
+    background-color: #ffab5f;
+    /* margin-left: 11.2rem; */
+  }
+
+  /* C'est très bien on sait directement de quoi il s'agit  "text pour baniere" */
+  .text-banniere {
+    width: 300px;
+    text-align: justify;
+    margin-left: 5rem;
+    font-size: large;
+    font-weight: 600;
+  }
+
+  /*  PAS bien on NE sait PAS de quoi il s'agit   */
+  /* 
+        PIRE: tu n'utilises pas pour du text mais pour un block ça aurait du sens avec une classe du genre "article", "block-section"
+        ou encore mieux utilisier le tag section
+        je remplace tes text-1,text-2, text-3... par la balise/tag section
+      */
+
+  section {
+    width: 30rem;
+    height: 8rem;
+    text-align: justify;
+    font-weight: 600;
+  }
+
+  /* les titres en h2 */
+  section h2 {
+    /* margin-bottom: 1rem; */
+    font-weight: bold;
+    color: rgb(63, 63, 169);
+    text-align: center;
+  }
+
+  /* Pour les alignement à droit ou à gauche */
+  /* C'est mieux d'utilisé float ou flex non plutot que de mettre des marge? */
+  section.right {
+    margin-right: 45rem;
+  }
+
+  section.left {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin-left: 45rem;
+  }
+
+  .ligne {
+    width: 20rem;
+    height: 1px;
+    background-color: black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+     margin-left: 43rem;
+  }
+
+  .ligne-2 {
+    width: 20rem;
+    height: 0.5px;
+    background-color: black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 43rem;
+  }
+
+  .ligne-4 {
+    width: 20rem;
+    height: 0.5px;
+    background-color: black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 43rem;
+  }
+
+  /* le footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 8rem;
+    margin: 2rem;
+    background-color: #ffab5f;
+    /* Pour le text */
+    font-weight: 600;
+    text-align: justify;
+    /* margin-left: 11rem; */
+    /* je rajoute des marges interns (padding) plutot que utilise encore with dans text-5 */
+    padding: 20px;
+  }
+
+  .banniere-reseaux {
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* margin-left: 10rem; */
+  }
+}
